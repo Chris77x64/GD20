@@ -1,0 +1,34 @@
+{
+  "description": "My first yFiles for HTML WebApp.",
+  "license": "unlicensed",
+  "private": true,
+  "name": "graphenzeichnen",
+  "version": "1.0.0",
+  "scripts": {
+    "production": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-typescript": "^7.7.4",
+    "@yworks/optimizer": "^1.0.5",
+    "babel-loader": "^8.0.6",
+    "core-js": "^3.4.8",
+    "css-loader": "^3.3.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "regenerator-runtime": "^0.13.3",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.3",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "dat.gui": "^0.7.7",
+    "papaparse": "^5.2.0",
+    "yfiles": "./yFiles-for-HTML-Complete-2.2.0.3/lib/es-modules/"
+  }
+}

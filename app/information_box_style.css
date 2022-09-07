@@ -1,0 +1,26 @@
+
+div#information_box {
+    /*border-color: black;
+    border-width: thin;
+    border-style: solid;*/
+    background-color: #d4d4d4;
+    overflow: visible;
+}
+
+div.right {
+    position: absolute;
+    top: 200px;
+    right: 0px;
+    width: 300px;
+    padding: 10px;
+    z-index: 1;
+}
+
+div.left {
+    position: absolute;
+    left: 0px;
+    padding: 10px;
+    z-index: 0;
+   /* border-color: black;
+    border-style: solid;*/
+}

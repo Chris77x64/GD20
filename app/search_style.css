@@ -1,0 +1,103 @@
+/* Source: https://www.w3schools.com/howto/howto_js_autocomplete.asp */
+
+#top_bar {
+    width: 100%;
+    display: flex;
+    visibility: hidden;
+    background-color: #0a3542;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font: 16px Arial;
+}
+
+.autocomplete {
+    position: relative;
+    width: 380px;
+}
+
+input {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+}
+
+input[type=text] {
+    background-color: #f1f1f1;
+    width: 350px;
+}
+
+input[type=submit] {
+    background-color: DodgerBlue;
+    color: #fff;
+    cursor: pointer;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+    visibility: visible;
+    width: 350px;
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.autocomplete-items div:hover {
+    background-color: #e9e9e9;
+}
+
+.autocomplete-active {
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+}
+
+.searchBtn {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.starBtn {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 32px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+#exitBtn {
+    background: url("img/exit.png");
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    left: 1px;
+    visibility: hidden;
+}
+
+#exitBtn:hover {
+    background: url("img/exit_blue.png");
+    background-size: cover;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Graphenzeichnen</title>
+
+    <link type="text/css" rel="stylesheet" href="dist/lib.css">
+    <link type="text/css" rel="stylesheet" href="search_style.css">
+    <link type="text/css" rel="stylesheet" href="switch_mode_style.css">
+    <link type="text/css" rel="stylesheet" href="information_box_style.css">
+
+    <style>
+        html, body, #graphComponent {
+            width: 100%;
+            height: calc(100% - 50px);
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="top_bar">
+    <div id="mode_container">
+        <text id="mode_name">Exploration Mode</text>
+        <label class="switch">
+            <input type="checkbox" id="mode_switch">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <div>
+        <div class="autocomplete">
+            <input id="searchBar" type="text" placeholder="Search...">
+            <div id="exitBtn"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TODO: This is only a temporary placeholder for the information box-->
+<div id="information_box" class="right">
+    K-POP IS GREAT... Get here further information about K-Pop.
+    <ul>
+        <li>Name</li>
+        <li>Image</li>
+        <li>Wiki Information</li>
+    </ul>
+    ...
+</div>
+
+<div id="graphComponent" class="left"></div>
+
+
+<script src="dist/lib.js"></script>
+<script src="dist/app.js"></script>
+
+</body>
+</html>
