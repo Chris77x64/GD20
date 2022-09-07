@@ -1,4 +1,4 @@
-# Graph Drawing Contest 2020: Genetic Algorithms for Crossing Minimization
+# GD20: Genetic Algorithms for Crossing Minimization
 
 ## Consider K-POP dataset: artists, labels and groups  
 
